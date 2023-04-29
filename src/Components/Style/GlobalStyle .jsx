@@ -10,9 +10,17 @@ body {
   transition: all 0.5s ease;
   padding: 0;
   overflow-x: hidden;
+  ::-webkit-scrollbar {
+    background: ${({theme}) => theme.colors.background};
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({theme}) => theme.colors.textside};
+  }
 }
 *{
   text-transform: capitalize;
+
 }
 `;
 

@@ -4,7 +4,12 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Modal = ({ selcted, setSelcted }) => {
   return (
-    <ModalBackdrop initial={{ opacity: 0,y:'-100vh' }} animate={{ opacity: 1,y:'0' }} exit={{ opacity: 0 }} transition={{ type : "spring", stiffness: 60}}>
+    <ModalBackdrop
+      initial={{ opacity: 0, y: "-100vh" }}
+      animate={{ opacity: 1, y: "0" }}
+      exit={{ opacity: 0 }}
+      transition={{ type: "spring", stiffness: 60 }}
+    >
       <AiOutlineCloseCircle
         className="close"
         onClick={() => setSelcted(null)}
