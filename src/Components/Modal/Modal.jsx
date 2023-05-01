@@ -15,7 +15,6 @@ const Modal = ({ selcted, setSelcted }) => {
         onClick={() => setSelcted(null)}
       />
       <img src={selcted} alt="title" loading="lazy" />
-      <button onClick={() => window.open(selcted)}>Open Image</button>
     </ModalBackdrop>
   );
 };

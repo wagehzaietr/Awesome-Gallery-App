@@ -52,10 +52,6 @@ const ModalBackdrop = styled(motion.div)`
     font-size: 2.5rem;
     cursor: pointer;
     color: ${({ theme }) => theme.colors.text};
-    @media screen and (max-width: 768px) {
-      left: 9.5rem;
-      font-size: 2.5rem;
-    }
   }
 `;
 
