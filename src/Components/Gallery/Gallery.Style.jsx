@@ -4,6 +4,7 @@ const MainGallery = styled.div`
   display: flex;
   height: calc(100% - 7px);
   padding: 1rem;
+  margin-top: 1rem;
 `;
 
 const MainGalleryItem = styled.div`

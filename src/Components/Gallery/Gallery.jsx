@@ -5,7 +5,10 @@ import { storage } from "../../firebase/firebase";
 import { MyContext } from "../Context";
 import Search from "../Search/Search";
 import { motion } from "framer-motion";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 
 const Gallery = ({ setSelcted }) => {
   const { imageList } = useContext(MyContext);
@@ -23,16 +26,18 @@ const Gallery = ({ setSelcted }) => {
                 onClick={() => setSelcted(item)}
                 className="item"
               >
-                <LazyLoadComponent>
-                  <motion.img
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <LazyLoadImage
+                    effect="blur"
                     className="img"
                     src={item}
                     alt="Gallery-image"
                   />
-                </LazyLoadComponent>
+                </motion.div>
               </motion.div>
             );
           })}
