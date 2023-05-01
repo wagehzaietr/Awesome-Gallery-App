@@ -7,7 +7,6 @@ import SideNav from "./Components/SideNav/SideNav";
 import { useAuth } from "./Components/AuthContext";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import * as dotenv from 'dotenv';
-import Socials from "./Components/Socials/Socials";
 
 
 function App() {
@@ -48,7 +47,6 @@ function App() {
       {user ? <Search /> : <LandingPage/>}
       <Gallery setSelcted={setSelcted} selcted={selcted} />
       {selcted && <Modal selcted={selcted} setSelcted={setSelcted} />}
-      <Socials/>
     </ThemeProvider>
   );
 }
