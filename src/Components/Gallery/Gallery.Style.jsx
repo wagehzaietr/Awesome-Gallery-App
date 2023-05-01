@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const MainGallery = styled.div`
   display: flex;
-  height: calc(100vh - 70px);
+  height: calc(100% - 7px);
   padding: 1rem;
 `;
 
