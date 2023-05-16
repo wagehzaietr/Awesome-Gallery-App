@@ -9,7 +9,7 @@ const MainGallery = styled.div`
 
 const MainGalleryItem = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding-left: 1rem;
   padding-right: 1rem;
   gap: 0.8rem;
